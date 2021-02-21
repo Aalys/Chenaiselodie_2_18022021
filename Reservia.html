@@ -17,11 +17,13 @@
                 </div>
                 <nav>
                     <!--ajouter ancres-->
-                    <div class="n1">Hébergements</div>
-                    <div class="n2">Activités</div>
-                    <div class="n3">S'inscrire</div>
-                </nav>          
-            </div>  
+                    <ul>
+                        <li><a href="#Ancreheb">Hébergements</a></li>
+                        <li><a href="#Ancreact">Activités</a></li>
+                        <li>S'inscrire</li>
+                    </ul>
+                </nav>    
+            </div>
             <div class="entete">
                 <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                 <p>En plein centre ville ou en pleine nature</p>              
@@ -35,19 +37,19 @@
             <div class="filtres">  
                 Filtres
                 <!-- effet au survol-->
-                <i class="fas fa-money-bill-wave"></i> Economique
-                <i class="fas fa-child"></i> Familial
-                <i class="fas fa-heart"></i> Romantique
-                <i class="fas fa-dog"></i> Animaux autorisés
+                <div class="money"><i class="fas fa-money-bill-wave"></i> Economique</div>
+                <div class="child"><i class="fas fa-child"></i> Familial</div>
+                <div class="heart"><i class="fas fa-heart"></i> Romantique</div>
+                <div class="dog"><i class="fas fa-dog"></i> Animaux autorisés</div>
             </div>
-            <i class="fas fa-info-circle"></i>
+            <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
         </header>
         
     
         <!-- Section - Hebergements + Aside Les plus populaires -->
 
         <section>
-            <h3>hébergements à Marseille</h3>
+            <div id="Ancreheb"><h3>Hébergements à Marseille</h3></div>
             <div class="article">
                 <div class="hebergement1">
                     <div class="room">
@@ -101,12 +103,14 @@
                 <p>Afficher plus</p>
 
             <div class="populaire">
-                <h2>Les plus populaires</h2>
+                <h3>Les plus populaires</h3>
 
             </div>
         </section>
 
         <!-- Section - Activités -->
+
+        <div id="Ancreact"></div>
 
         <!-- Footer -->
 

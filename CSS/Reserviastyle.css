@@ -9,36 +9,60 @@
 }
 
 
+/* Polices */
 
 body
 {
     width:  100%;
+    font-family: 'ralewaythin';
 }
+h3
+{
+    font-weight: bolder;
+}
+
+/* En-tête */
+
 .logo1
 {
-    width: 80px;
+    width: 100px;
 }
 header
 {
-    width: 100%;
+    width: 97%;
+    margin-left: 30px;
 }
 .haut
 {
     display: flex;
-    align-items: baseline;
+    justify-content: space-between;
 }
-nav
+nav ul
 {
     display: flex;
-    justify-content: right;
+    margin-top: -15px;
+}
+nav li
+{
+    margin: 20px;
+    list-style-type: none;
 }
 .entete h3
 {
     margin-bottom: -4px;
 }
+.filtres
+{
+    display: flex;
+}
 
-/* Police */
+/* Corps du site : organisation, images etc */
 
+section
+{
+    width: 97%;
+    margin-left: 30px;
+}
 ul
 {
     list-style-type: none;
