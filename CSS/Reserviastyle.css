@@ -85,12 +85,43 @@ header
 }
 .filtres
 {
-    display: flex;
-    justify-content: space-between;
-    width: 25%;
+    display: grid;
+    grid-template-columns: 7% 13% 10% 15% 15%;
+    grid-template-rows: auto;
+    gap: 10px px;
+    grid-template-areas:
+      ". . . . .";
+    width: 45%;
     margin-bottom: 1%;
 }
 
+
+/* Design search */ 
+
+.search
+{
+    width: 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+#site-search
+{
+    border-radius:8px;
+}
+button
+{
+    border: 0;
+    border-radius: 0% 25% 25% 0%;
+    background-color: #0065FC;
+    color: white
+}
+.fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+    border-radius: 25% 0% 0% 25%;
+    padding: 13px;
+}
 /* Corps du site : organisation, images etc */
 
 section
@@ -119,3 +150,6 @@ ul
 {
     width: 10%;
 }
+
+
+/* Footer */
