@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'ralewaythin';
-    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-variablefont_wght-webfont.woff') format('woff');
+    src: url('police/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('police/police/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,46 +14,81 @@
 body
 {
     width:  100%;
-    font-family: 'ralewaythin';
+    font-family: "ralewaythin", Arial, Helvetica, sans-serif;
 }
-h3
+h4
 {
     font-weight: bolder;
 }
 
 /* En-tête */
 
-.logo1
-{
-    width: 100px;
-}
 header
 {
-    width: 97%;
-    margin-left: 30px;
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 1%;
 }
-.haut
+.ban1
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+     /* Penser à définir les tailles pour séparer */
+.Reservia
+{
+    width: 60%;
+}
+.logo1
+{
+    width: 90px;
+    height: 45px;
+}
+.ban
+{
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.ban ul
 {
     display: flex;
-    justify-content: space-between;
 }
-nav ul
+.ban li
 {
-    display: flex;
-    margin-top: -15px;
+  width: 100%;
 }
-nav li
+.inscription
 {
-    margin: 20px;
-    list-style-type: none;
+    width: 5%;
+    margin-left: -3%;
 }
-.entete h3
+.ancre
 {
-    margin-bottom: -4px;
+    width: 40%;
+}
+
+  /* soucis pour le responsive, "s'inscrire" doit se trouver seul en haut donc pas la même div ? /alignement */
+.Reservia
+ {
+     margin-bottom: 1%;
+ }
+.entete
+{
+    line-height: 15%;
+}
+.search
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .filtres
 {
     display: flex;
+    justify-content: space-between;
+    width: 25%;
+    margin-bottom: 1%;
 }
 
 /* Corps du site : organisation, images etc */
@@ -61,7 +96,7 @@ nav li
 section
 {
     width: 97%;
-    margin-left: 30px;
+    margin-left: 2%;
 }
 ul
 {
@@ -82,5 +117,5 @@ ul
 }
 .room
 {
-    width: 8%;
+    width: 10%;
 }
