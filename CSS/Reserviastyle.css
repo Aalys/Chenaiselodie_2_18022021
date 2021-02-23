@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'ralewaythin';
-    src: url('police/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('police/police/raleway-variablefont_wght-webfont.woff') format('woff');
+    src: url('D:/Documents/Formation/P2_Chenais_Elodie/css/police/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('D:/Documents/Formation/P2_Chenais_Elodie/police/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,143 +13,209 @@
 
 body
 {
-    width:  100%;
     font-family: "ralewaythin", Arial, Helvetica, sans-serif;
+    width: 100%;
+  
 }
-h4
+h2, h3, h4
 {
-    font-weight: bolder;
+    font-weight: 800;
 }
 
 /* En-tête */
 
 header
 {
-    width: 95%;
-    margin-left: 2%;
-    margin-top: 1%;
+    width: 1440px;
+    margin: auto;
+    display: flex;
 }
-.ban1
+     /* Penser à définir les tailles pour séparer */
+.logo
+{
+    height: 7rem;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+nav
 {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
 }
-     /* Penser à définir les tailles pour séparer */
-.Reservia
+.headerlink
 {
-    width: 60%;
-}
-.logo1
-{
-    width: 90px;
-    height: 45px;
-}
-.ban
-{
-    width: 60%;
-    display: flex;
-    flex-direction: row-reverse;
-}
-.ban ul
-{
-    display: flex;
-}
-.ban li
-{
-  width: 100%;
-}
-.inscription
-{
-    width: 5%;
-    margin-left: -3%;
-}
-.ancre
-{
-    width: 40%;
+    text-decoration: none;
+    padding: 2rem;
 }
 
+
   /* soucis pour le responsive, "s'inscrire" doit se trouver seul en haut donc pas la même div ? /alignement */
-.Reservia
- {
-     margin-bottom: 1%;
- }
+
 .entete
 {
-    line-height: 15%;
-}
-.search
-{
-    margin-top: 1%;
-    margin-bottom: 1%;
+    line-height: 1.3;
 }
 .filtres
 {
-    display: grid;
-    grid-template-columns: 7% 13% 10% 15% 15%;
-    grid-template-rows: auto;
-    gap: 10px px;
-    grid-template-areas:
-      ". . . . .";
-    width: 45%;
-    margin-bottom: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
-
+.filtres h2
+{
+    margin-right: 1em;
+}
 
 /* Design search */ 
 
 .search
 {
-    width: 15%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    display: inline-flex;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 #site-search
 {
-    border-radius:8px;
+    border-color: #F2F2F2;;
+    border-width: 1px;
 }
 button
 {
     border: 0;
-    border-radius: 0% 25% 25% 0%;
+    border-radius: 0em 1em 1em 0em;
     background-color: #0065FC;
     color: white
 }
 .fa-map-marker-alt
 {
     background-color: #F2F2F2;
-    border-radius: 25% 0% 0% 25%;
-    padding: 13px;
+    border-radius: 1em 0em 0em 1em;
+    padding: 1em 1em 1em 1.5em;
 }
 /* Corps du site : organisation, images etc */
 
 section
 {
-    width: 97%;
-    margin-left: 2%;
-}
-ul
-{
-    list-style-type: none;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .article
 {
     display: flex;
-    flex-direction: column;
+}
+.art h4
+{
+    padding: 1em;
+}
+.art
+{
+    background-color: #F2F2F2;
+    width: 70%;
+    border-radius: 1em;
 }
 .hebergement1
 {
    display: flex;
+   column-gap: 2em;
+   margin: 0 2em 2em;
 }
 .hebergement2
 {
     display: flex;
+    column-gap: 2em;
+    margin:0 2em 2em;
 }
 .room
 {
-    width: 10%;
+    width: 100%;
+    background-color: white;
+    padding: 0.8em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px #0000002e;
+}
+.room li
+{
+    list-style-type: none;
+}
+.room ul
+{
+    margin: 0 1em;
+    padding: 0;
+}
+.photoroom
+{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 0.4em;
 }
 
+/* Partie droite de section - Aside */
+
+.secright
+{
+    display: flex;
+    background-color: #F2F2F2;
+    width: 30%;
+    border-radius: 1em;
+    margin-left: 2em;
+}
+.sectitle
+{
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+}
 
 /* Footer */
+
+footer
+{
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-top: 1em;
+    line-height: 1em;
+
+}
+.foot
+{
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: baseline;
+}
+.propos
+{
+    width: 30%;
+    font-size: 1em;
+    padding: 2rem 2rem;
+}
+.nosheb
+{
+    width: 30%;
+    font-size: 1em;
+    padding: 2rem 2rem;
+}
+.assistance
+{
+    width: 30%;
+    font-size: 1em;
+    padding: 2rem 2rem;
+}   
+.footlink
+{
+text-decoration:none;
+color: black;
+}
+.foot h3
+{
+    padding-bottom: 1em;
+    font-size: 1.3em;
+}
