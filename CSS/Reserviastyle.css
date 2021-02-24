@@ -124,26 +124,20 @@ section
     width: 70%;
     border-radius: 1em;
 }
-.hebergement1
-{
-   display: flex;
-   column-gap: 2em;
-   margin: 0 2em 2em;
+.hebergement1 {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap; /*Le flex suffit amplement pour tout caler en une seule div*/
 }
-.hebergement2
-{
-    display: flex;
-    column-gap: 2em;
-    margin:0 2em 2em;
-}
-.room
-{
-    /* width: ; */
-    height: 300px;
-    background-color: white;
-    padding: 0.5em;
-    border-radius: 1em;
-    box-shadow: 0 0 10px #0000002e;
+
+.room {
+	width: 30%; /* Avec les modif du flex, la largeur de 30% permet 3 blocs et un peu de marge*/
+	height: 250px; /* Hauteur fixe s*/ 
+	background-color: white;
+	padding: 0.5em;
+	border-radius: 1em;
+	box-shadow: 0 0 10px #0000002e;
+	margin-bottom: 10px;
 }
 .room li
 {
@@ -156,10 +150,10 @@ section
 }
 .photoroom
 {
-    width: 100%;
+    width: 100%; /* largeur de 100% des 30% du bloc parent*/
     height: 150px;
-    margin: auto;
-    object-fit: contain; /* tient les proportions en étant ajusté à la boite */
+    margin: auto; /* Hauteur fixe */
+    /* object-fit: contain; tient les proportions en étant ajusté à la boite */
     border-radius: 1em 1em 0 0;
     margin-bottom: 0.4em;
 }
@@ -181,19 +175,20 @@ section
     padding: 1.5em;
     justify-content: space-between;
 }
-.hebergement3
+.hebergement3 
 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2em;
-    margin: 0 2em 0 2em;
-    height: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2em;
+	margin: 0 2em 0 2em;
+	height: 100%;
+	width: 85%;
 }
 .room2
 {
     display: flex;
     width: 100%;
-    height: 16%;
+    height: 150px;
     background-color: white;
     padding: 0.5em;
     border-radius: 1em;
@@ -208,10 +203,10 @@ section
 {
     list-style-type: none;
 }
-.photoheb3
-{
-    width: 35%;
-    height: 100%;
+.photoheb3 {
+	min-width: 35%;
+	height: 100%;
+	max-width: 35%;
 }
 .photoroom2
 {
@@ -220,25 +215,28 @@ section
     height: 100%;
     border-radius: 1em 0 0 1em;
 }
-.soleil
-{
+.block-txt-aside-right 
+{ /* une seule classe suffit et la position est relative pour appliquer une position aux étoiles*/
     display: flex;
     flex-direction: column;
     padding-left: 1em;
-}
-.eau
-{
-    display: flex;
-    flex-direction: column;
-    padding-left: 1em;
-}
-.bleu
-{
-    display: flex;
-    flex-direction: column;
-    padding-left: 1em;
+    position: relative; 
 }
 
+.stars-span 
+{ /* position absolute pour afficher en bas du bloc, parent en position relative */
+	position: absolute;
+	bottom: 0;
+    color: #0065FC;
+}
+.stars-span-g
+{
+    color: darkgray;
+}
+.stars-span2
+{
+    color: #0065FC;
+}
 
 /* Footer */
 
