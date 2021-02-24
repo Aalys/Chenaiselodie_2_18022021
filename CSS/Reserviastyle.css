@@ -33,7 +33,7 @@ header
      /* Penser à définir les tailles pour séparer */
 .logo
 {
-    height: 7rem;
+    height: 7em;
     padding-top: 2em;
     padding-bottom: 2em;
 }
@@ -46,7 +46,7 @@ nav
 .headerlink
 {
     text-decoration: none;
-    padding: 2rem;
+    padding: 2em;
 }
 
 
@@ -134,7 +134,7 @@ section
 {
     width: 100%;
     background-color: white;
-    padding: 0.8em;
+    padding: 0.5em;
     border-radius: 1em;
     box-shadow: 0 0 10px #0000002e;
 }
@@ -150,8 +150,8 @@ section
 .photoroom
 {
     width: 100%;
-    object-fit: contain;
-    border-radius: 1rem 1rem 0 0;
+    object-fit: contain; /* tient les proportions en étant ajusté à la boite */
+    border-radius: 1em 1em 0 0;
     margin-bottom: 0.4em;
 }
 
@@ -164,13 +164,72 @@ section
     width: 30%;
     border-radius: 1em;
     margin-left: 2em;
+    flex-direction: column;
 }
 .sectitle
 {
     display: flex;
-    padding: 1em;
+    padding: 1.5em;
     justify-content: space-between;
 }
+.hebergement3
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    margin: 0 2em 0 2em;
+    height: 100%;
+}
+.room2
+{
+    display: flex;
+    width: 100%;
+    height: 16%;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px #0000002e;
+}
+.room2 ul
+{
+    margin: 0;
+    padding: 0;
+}
+.room2 li
+{
+    list-style-type: none;
+}
+.photoheb3
+{
+    width: 35%;
+    weight: 100%;
+}
+.photoroom2
+{
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    width: 100%;
+    height: 100%;
+    border-radius: 1em 0 0 1em;
+}
+.soleil
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+.eau
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+.bleu
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
 
 /* Footer */
 
@@ -187,7 +246,7 @@ footer
     max-width: 100%;
     width: 1440px;
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 2em;
     display: flex;
     align-items: baseline;
 }
@@ -195,19 +254,19 @@ footer
 {
     width: 30%;
     font-size: 1em;
-    padding: 2rem 2rem;
+    padding: 2em 2em;
 }
 .nosheb
 {
     width: 30%;
     font-size: 1em;
-    padding: 2rem 2rem;
+    padding: 2em rem;
 }
 .assistance
 {
     width: 30%;
     font-size: 1em;
-    padding: 2rem 2rem;
+    padding: 2em 2em;
 }   
 .footlink
 {
