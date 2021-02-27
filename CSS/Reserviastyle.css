@@ -47,6 +47,7 @@ nav
 {
     text-decoration: none;
     padding: 2em;
+    display: flex;
 }
 
 
@@ -72,6 +73,11 @@ nav
     border-radius: 50px;
     margin-right: 10px;
     padding: 10px;
+    font-weight: bold;
+}
+.button-nav-filter i 
+{
+    
 }
 /* Design search */ 
 
@@ -151,7 +157,7 @@ section
 .photoroom
 {
     width: 100%; /* largeur de 100% des 30% du bloc parent*/
-    height: 150px;
+    height: 150px; /* Mieux vaut toujours en px */
     margin: auto; /* Hauteur fixe */
     /* object-fit: contain; tient les proportions en étant ajusté à la boite */
     border-radius: 1em 1em 0 0;
@@ -238,6 +244,73 @@ section
     color: #0065FC;
 }
 
+/* Partie Activités */
+
+.article-act
+{
+    width: 1440px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.article-act h4
+{
+    padding: 1em;
+}
+.art-card
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.card-act-img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1em 1em 0em 0em;
+    margin: 0;
+}
+.card-act-1
+{
+    width: 50%;
+    height: 100px;
+}
+.card-act-2
+{
+    width: 50%;
+    /* flex-direction: column; */
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.colonne
+{
+    width: 100%;
+    margin-left: 1em;
+}
+.activity-card
+{
+    border-radius: 1em 1em 1em 1em;
+    background-color: white;
+    box-shadow: 0 0 10px #0000002e;
+    
+}
+.accivity-link{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-act-img1{
+    width: 350px;
+    height: 500px;
+    object-fit: cover   ;
+}
+
 /* Footer */
 
 footer
@@ -285,3 +358,8 @@ color: black;
     padding-bottom: 1em;
     font-size: 1.3em;
 }
+
+@media all and (max-width: 768px) 
+
+
+@media screen and (min-width: 768px) and (max-width: 991px)
