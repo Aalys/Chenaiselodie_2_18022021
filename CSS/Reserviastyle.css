@@ -55,23 +55,19 @@ header
     text-decoration: none;
     padding: 2em;
     display: flex;
-}
-.headerlinkact
-{
-    color: black;
     border-top: 3px solid transparent;
 }
 .headerlink:hover
 {
     color: #0065FC;
 }
+.headerlinkact
+{
+    color: black;
+}
 .activelink
 {
     border-top: 3px solid #0065FC;
-}
-.button-inscription
-{
-    border-top: 3px solid transparent;
 }
 
   /* soucis pour le responsive, "s'inscrire" doit se trouver seul en haut donc pas la même div ? /alignement */
@@ -163,9 +159,6 @@ header
 
 .search
 {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center; */
     display: inline-flex;
     margin-top: 1em;
     margin-bottom: 2em;
