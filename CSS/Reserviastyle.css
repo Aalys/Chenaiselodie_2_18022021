@@ -235,11 +235,9 @@ section
 
 .hebergement1 {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly; /* équitablement */
 	flex-wrap: wrap; /*Le flex suffit amplement pour tout caler en une seule div*/
     row-gap: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
 }
 .room {
 	width: 27%; /* Avec les modif du flex, la largeur de 30% permet 3 blocs et un peu de marge*/
@@ -336,7 +334,18 @@ section
 .stars-span { /* position absolute pour afficher en bas du bloc. Pour ça, j'ai mis le parent en position relative */
 	position: absolute;
 	bottom: 0;
+    color: #0065FC;
 }
+
+.stars-span-g
+{
+    color: darkgray;
+}
+.stars-span2
+{
+    color: #0065FC;
+}
+
 
 /* ------ Part 2 : Section Activités ------>
 
