@@ -13,23 +13,16 @@
 
 body
 {
-    font-family:  "ralewaythin",    Arial, Helvetica, sans-serif;
-    width: 100%;  
+    font-family: "ralewaythin", Arial, Helvetica, sans-serif;
+    width: 100%;
+  
 }
-/* .bloc
-{
-    width: 1440px;
-    margin: auto;
-    padding: 0 2em;
-    box-sizing: border-box;
-} */
 h2, h3, h4
 {
-    font-weight: bold;
-    font-family: "ralewaithing", Arial, Helvetica, sans-serif;
+    font-weight: 800;
 }
 
-/* Header : nav, logo */
+/* En-tête */
 
 header
 {
@@ -44,7 +37,7 @@ header
     padding-top: 2em;
     padding-bottom: 2em;
 }
-.nav
+nav
 {
     width: 100%;
     display: flex;
@@ -54,41 +47,14 @@ header
 {
     text-decoration: none;
     padding: 2em;
-    display: flex;
 }
-.headerlinkact
-{
-    color: black;
-    border-top: 3px solid transparent;
-}
-.headerlink:hover
-{
-    color: #0065FC;
-}
-.activelink
-{
-    border-top: 3px solid #0065FC;
-}
-.button-inscription
-{
-    border-top: 3px solid transparent;
-}
+
 
   /* soucis pour le responsive, "s'inscrire" doit se trouver seul en haut donc pas la même div ? /alignement */
 
-
-/* ------ TOP ------- */
-.top
-{
-    display: block;
-}
 .entete
 {
     line-height: 1.3;
-}
-.entete p
-{
-    margin-bottom: -0.2em;
 }
 .filtres
 {
@@ -99,104 +65,44 @@ header
 .filtres h2
 {
     margin-right: 1em;
-    font-size: 1.5em;
 }
 .button-nav-filter
 {
-    border: 2px solid #f2f2f2b0;
+    border: 1px solid #F2F2F2;
     border-radius: 50px;
-    margin-right: 2em;
-    padding: 0 10px 0 0;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+    margin-right: 10px;
+    padding: 10px;
 }
-.icon-filter
-{
-    background-color: #DEEBFF;
-    color: blue;
-    border-radius: 100%;
-    height: 3em;
-    width: 3em;
-    min-height: 3.5em;
-    min-width: 3.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.title-filter
-{
-    align-items: center;
-    margin: 0 1.2em;
-}
-
-    /* Info result */
-
-.result
-{
-    display: flex;
-    align-items: center;
-    margin: 2em 0 2em 0;
-}
-.info-result
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2em;
-    width: 2em;
-    min-height: 2em;
-    min-width: 2em;
-    border: solid 1px #d9d9d9;
-    border-radius: 100%;
-    margin-right: 1em;
-}
-.fa-info
-{
-    color: blue;
-}
-.text-result
-{
-    margin: 0;
-}
-        /* Design search */ 
+/* Design search */ 
 
 .search
 {
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    text-align: center; */
+    text-align: center;
     display: inline-flex;
     margin-top: 1em;
     margin-bottom: 2em;
 }
 #site-search
 {
+    border-color: #F2F2F2;;
     border-width: 1px;
-    border-top: #F2F2F2 1px solid;
-    border-bottom: #F2F2F2 1px solid;
-    border-left: none;
-    border-right: none;
-    font-weight: bold;
-    padding: 0.8em 0 0.8em;
 }
 button
 {
-    border: none;
+    border: 0;
     border-radius: 0em 1em 1em 0em;
     background-color: #0065FC;
-    color: white;
-    font-weight: bold;
-    padding: 0.8em 1.5em;
-    font-size: 1em;
+    color: white
 }
 .fa-map-marker-alt
 {
     background-color: #F2F2F2;
     border-radius: 1em 0em 0em 1em;
-    padding: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 1.5em;
 }
-/* ------ Corps du site : organisation, images etc ------ */
+/* Corps du site : organisation, images etc */
 
 section
 {
@@ -206,44 +112,32 @@ section
 }
 .article
 {
-    width: 100%;
-    height: 600px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
 }
 .art h4
 {
-    padding: 1em 1em 1em 2em;
-    margin: 0;
+    padding: 1em;
 }
 .art
 {
     background-color: #F2F2F2;
-    width: 67%;
-    border-radius: 2em;
-}
-.art p
-{
-    padding: 2em 3em 2em;
-    font-weight: bold;
+    width: 70%;
+    border-radius: 1em;
 }
 .hebergement1 {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap; /*Le flex suffit amplement pour tout caler en une seule div*/
-    margin-left: 2em;
-    margin-right: 2em;
-    row-gap: 2em;
 }
 
 .room {
 	width: 30%; /* Avec les modif du flex, la largeur de 30% permet 3 blocs et un peu de marge*/
-	/* height: 240px; /* Hauteur fixe  */
+	height: 250px; /* Hauteur fixe, on en avait parlé*/ 
 	background-color: white;
 	padding: 0.5em;
 	border-radius: 1em;
 	box-shadow: 0 0 10px #0000002e;
+	margin-bottom: 10px;
 }
 .room li
 {
@@ -257,14 +151,14 @@ section
 .photoroom
 {
     width: 100%; /* largeur de 100% des 30% du bloc parent*/
-    height: 7em; /* Mieux vaut toujours en px */
+    height: 150px;
     margin: auto; /* Hauteur fixe */
-    object-fit: cover;/* contain; tient les proportions en étant ajusté à la boite */
+    /* object-fit: contain; tient les proportions en étant ajusté à la boite */
     border-radius: 1em 1em 0 0;
     margin-bottom: 0.4em;
 }
 
-        /* Partie droite de section - Aside */
+/* Partie droite de section - Aside */
 
 .secright
 {
@@ -281,18 +175,11 @@ section
     padding: 1.5em;
     justify-content: space-between;
 }
-.fa-chart-line
-{
-    height: 15px;
-    width: 30px;
-}
-.hebergement3 
-{
+.hebergement3 {
 	display: flex;
 	flex-direction: column;
 	row-gap: 2em;
 	margin: 0 2em 0 2em;
-    margin-top: -0.5em;
 	height: 100%;
 	width: 85%;
 }
@@ -300,7 +187,7 @@ section
 {
     display: flex;
     width: 100%;
-    height: 140px;
+    height: 150px;
     background-color: white;
     padding: 0.5em;
     border-radius: 1em;
@@ -327,138 +214,20 @@ section
     height: 100%;
     border-radius: 1em 0 0 1em;
 }
-.block-txt-aside-right 
-{ /* une seule classe suffit et la position est relative pour appliquer une position aux étoiles*/
+.block-txt-aside-right { /* au lieu de soleil, eau etc... une seule classe suffit et la position est relative pour appliquer une position aux étoiles*/
     display: flex;
     flex-direction: column;
     padding-left: 1em;
     position: relative; 
 }
 
-.stars-span 
-{ /* position absolute pour afficher en bas du bloc, parent en position relative */
+.stars-span { /* position absolute pour afficher en bas du bloc. Pour ça, j'ai mis le parent en position relative */
 	position: absolute;
 	bottom: 0;
-    color: #0065FC;
-}
-.stars-span-g
-{
-    color: darkgray;
-}
-.stars-span2
-{
-    color: #0065FC;
 }
 
-        /* Partie Activités */
 
-.article-act
-{
-    width: 1440px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
-    margin-bottom: 1em;
-    display: flex;
-    flex-direction: column;
-
-}
-.article-act h4
-{
-    padding-bottom: -2em;
-    padding-left: 1em;
-}
-.art-card
-{
-    width: 1440px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    margin-top: -2em;
-    margin-bottom: 4em;
-}
-.card-act-img
-{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 1em 1em 0em 0em;
-
-}
-.colonne
-{
-    width: 24%;
-    height: 550px;
-    margin: 1em;    
-}
-.activity-card
-{
-    border-radius: 1em 1em 1em 1em;
-    background-color: white;
-    box-shadow: 0 0 10px #0000002e;
-    margin-top: 2em;
-}
-.activity-link
-{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-a.activity-link:link
-{
-    text-decoration: none;
-}
-.card-act-img1   /* card 1 & 4 grandes */
-{
-    width: 100%;
-    height: 480px;
-    object-fit: cover;
-    border-radius: 1em 1em 0 0;
-}
-.card-act-img4
-{
-    width: 100%;
-    height: 480px;
-    object-fit: cover;
-    border-radius: 1em 1em 0 0;
-}
-.card-act-img2 
-{
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 1em 1em 0 0;
-}
-.card-act-img5
-{
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 1em 1em 0 0;
-}
-.card-act-img6
-{
-    width: 100%;
-    height: 212px;
-    object-fit: cover;
-    border-radius: 1em 1em 0 0;
-}
-.card-act-img3 /* la plus petite */
-{
-    width: 100%;
-    height: 163px;
-    object-fit: cover;
-    border-radius: 1em 1em 0 0;   
-}
-.activity-card strong
-{
-    padding: 1em;
-    color: black;
-    font-size: 1.2em;
-}
-
-/* ----- Footer ----- */
+/* Footer */
 
 footer
 {
@@ -466,7 +235,7 @@ footer
     background-color: #F2F2F2;
     padding-top: 1em;
     line-height: 1em;
-    align-items: center;
+
 }
 .foot
 {
@@ -475,6 +244,7 @@ footer
     margin: auto;
     padding: 0 2em;
     display: flex;
+    align-items: baseline;
 }
 .propos
 {
@@ -486,7 +256,7 @@ footer
 {
     width: 30%;
     font-size: 1em;
-    padding: 2em 2em;
+    padding: 2em rem;
 }
 .assistance
 {
@@ -496,183 +266,11 @@ footer
 }   
 .footlink
 {
-    text-decoration:none;
-    color: black;
+text-decoration:none;
+color: black;
 }
 .foot h3
 {
     padding-bottom: 1em;
     font-size: 1.3em;
-}
-
-@media screen and (max-width: 375px) 
-{
-    body
-    {
-        max-width: 375px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    /* .bloc
-    {
-        max-width: 375px;
-        margin: auto;
-        padding: 0 2rem;
-        box-sizing: border-box;
-    } */
-    header
-    {
-        max-width: 375px;
-        height: 100%;
-        margin-bottom: 2em;
-        display: flex;
-        flex-direction: column;
-    }
-    .nav
-    {
-        width: 375px;
-        display: flex;
-        flex-direction: row;
-    }
-    .activelink
-    {
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        border-bottom: 3px solid #0065FC;
-        border-top:none;
-    }
-    .headerlinkact
-    {
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        border-bottom: 3px solid  #F2F2F2;
-    }
-    .button-inscription
-    {
-        display: flex;
-        justify-content: fle;
-    }
-    .form-search 
-    {
-        display: flex;
-        width: 100%;
-    }
-    .top
-    {
-        width: 375px;
-    }
-    .filtres
-    {
-        width: 375px;
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        row-gap: 1em;
-        margin: 0;
-    }
-    section
-    {
-        max-width: 375px;
-        margin: 0;
-    }
-    .article
-    {
-        width: 375px;
-        height:auto;
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0;
-    }
-    .room 
-    {
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        padding: 0.5em;
-        border-radius: 1em;
-        box-shadow: 0 0 10px #0000002e;
-    }
-    .hebergement1 
-    {
-        display: flex;
-        flex-direction: column;
-        margin-right: 2em;
-        row-gap: 2em;
-    }
-    .art
-    {
-        margin-top: 2em;
-        width: 375px;
-        height: 100%;
-    }
-    .article-act
-    {
-        width: 375px;
-        height: 100%;
-    }
-    .secright
-    {
-        width: 375px;
-        height: 600px;
-        margin: 0;
-    }
-    .art-card
-    {
-        width: 375px;   
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-    .colonne
-    {
-        width: 375px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .activity-card
-    {
-        width: 375px;
-        height: 100%;
-    }
-    .card-act-img1
-    {
-        width: 375px;
-        height: 135px;
-    }
-    .card-act-img2
-    {
-        width: 375px;
-        height:  135px;
-    }
-    .card-act-img3
-    {
-        width: 375px;
-        height:  135px;
-    }
-    .card-act-img4
-    {
-        width: 375px;
-        height:  135px;
-    }
-    .card-act-img5
-    {
-        width: 375px;
-        height:  135px;
-    }
-    .card-act-img6
-    {
-        width: 375px;
-        height:  135px;
-    }
-    .foot
-    {
-        width: 375px;
-        height: auto;
-        flex-direction: column;
-    }
 }
