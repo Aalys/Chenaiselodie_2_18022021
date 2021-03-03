@@ -204,7 +204,7 @@ button
 }
 
 
-/* Corps du site : organisation, images etc */
+/* ----- Corps du site : organisation, images etc -----  */
 
 section
 {
@@ -287,7 +287,7 @@ section
     justify-content: space-between;
     align-items: center;
 }
-.hebergement3 {
+.hebergement2 {
 	display: flex;
 	flex-direction: column;
 	row-gap: 2em;
@@ -338,8 +338,11 @@ section
 	bottom: 0;
 }
 
+/* ------ Part 2 : Section Activités ------>
 
-/* Footer */
+
+
+/* ------ Footer ------ */
 
 footer
 {
