@@ -15,7 +15,6 @@ body
 {
     font-family: "ralewaythin", Arial, Helvetica, sans-serif;
     width: 100%;
-  
 }
 h2, h3, h4
 {
@@ -73,7 +72,7 @@ header
   
   /* ------ TOP - Search + Filtres ------- */
 
-  .top
+.top
 {
     display: block;
 }
@@ -224,8 +223,9 @@ section
 }
 .art h4 
 {
-    padding: 1em 1em 1em 2em;
+    padding: 2.2em;
     margin: 0;
+    font-size: 20px;
 }
 .art p 
 {
@@ -359,10 +359,11 @@ section
 }
 .activite h4
 {
-    padding: 2.5em 1em 1em 0;
+    padding: 2.5em 1em 1em;
     font-weight: bold;
+    font-size: 20px;
 }
-.activite h5
+.total-act strong
 {
     font-weight: bold;
     font-size: 1.2em;
@@ -371,51 +372,62 @@ section
 .total-act
 {
     width: 100%;
+    height: 500px;
     display: flex;
     flex-direction: row;
 }
-.colonne1
+.card 
+{
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1em;
+    color: white;
+}
+.activity-card
 {
     width: 23%;
     height: 100%;
-    margin: 1em;    
-    border-radius: 2em;
+    margin: 0 1.5em;    
 }
-.colonne2
+.colonne
 {
     width: 24%;
     height: 100%;
-    margin: 1.5em;    
-    box-shadow: 0 0 20px #0000002e;
-    border-radius: 2em;
-    display: flex;
-    justify-content: space-around;
+    margin: 0 1.5em;    
 }
 .activity-link
 {
-    display: flex;
-    flex-direction: column;
     height: 100%;
     color: black;
     font-weight: bold;
-    box-shadow: 0 0 20px #0000002e;
+    border-radius: 2em;
 }
 a.activity-link:link
 {
     text-decoration: none;
 }
-.colonne1 img
+.activity-card img
 {
-    height: 450px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
-    background-color: #F2F2F2;
 }
-.colonne2 img
+.colonne img
 {
-    height: 200px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
+}
+.card-act-img2
+{
+    width: 100%;
+    height: 100px;
+}
+.card-act-img3
+{
+    width: 100%;
+    height: 100px;
 }
 
 
