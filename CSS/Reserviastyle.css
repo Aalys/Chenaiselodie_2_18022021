@@ -245,7 +245,7 @@ section
 	background-color: white;
 	padding: 0.4em;
 	border-radius: 1em;
-	box-shadow: 0 0 10px #0000002e;
+	box-shadow: 0 0 20px #0000002e;
 	margin-bottom: 10px;
 }
 .room li
@@ -352,7 +352,7 @@ section
 .activite
 {
     width: 1440px;
-    height: 550px;
+    height: 650px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5em;
@@ -366,6 +366,7 @@ section
 {
     font-weight: bold;
     font-size: 1.2em;
+    margin: 1.2em 1.5em;
 }
 .total-act
 {
@@ -373,24 +374,51 @@ section
     display: flex;
     flex-direction: row;
 }
-.colonne
+.colonne1
+{
+    width: 23%;
+    height: 100%;
+    margin: 1em;    
+    border-radius: 2em;
+}
+.colonne2
 {
     width: 24%;
     height: 100%;
-    margin: 1em;    
-    background-color: #F2F2F2;
+    margin: 1.5em;    
+    box-shadow: 0 0 20px #0000002e;
     border-radius: 2em;
+    display: flex;
+    justify-content: space-around;
 }
 .activity-link
 {
     display: flex;
     flex-direction: column;
     height: 100%;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 20px #0000002e;
 }
 a.activity-link:link
 {
     text-decoration: none;
 }
+.colonne1 img
+{
+    height: 450px;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+    background-color: #F2F2F2;
+}
+.colonne2 img
+{
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+
 /* ------ Footer ------ */
 
 footer
