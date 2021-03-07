@@ -435,10 +435,12 @@ section
 a.room:link
 {
     text-decoration: none;
+    color: black;
 }
 a.room2:link
 {
     text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width: 576px) 
