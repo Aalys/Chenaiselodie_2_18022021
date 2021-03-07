@@ -14,11 +14,10 @@
 body
 {
     font-family: "ralewaythin", Arial, Helvetica, sans-serif;
-    width: 100%;
 }
 h2, h3, h4
 {
-    font-weight: 800;
+    font-weight: bold;
 }
 
 /* En-tête */
@@ -32,7 +31,7 @@ header
      /* Penser à définir les tailles pour séparer */
 .logo
 {
-    height: 90px;
+    height: 50px;
     padding-top: 15px;
     padding-bottom: 20px;
 }
@@ -49,6 +48,7 @@ header
     padding: 2em;
     display: flex;
     border-top: 3px solid transparent;
+    color: #0065FC;
 }
 .headerlink:hover
 {
@@ -63,8 +63,53 @@ header
     border-top: 3px solid #0065FC;
 }
 
+@media screen and (max-width: 576px) 
+{
+    header
+    {
+        width: 576px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 2em;
+    }
+    .logo
+    {
+        height: 50px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .nav
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .button-inscription
+    {
+        position: absolute;
+        right: 0;
+    }
+    .activelink
+    {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .headerlinkact
+    {
+        border-bottom: 3px solid #F2F2F2;
+        border-top: none;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
 
-  /* soucis pour le responsive, "s'inscrire" doit se trouver seul en haut : row */
+}
+
+  /* soucis pour le responsive, "s'inscrire" doit se trouver seul en haut : position absolute/relative */
 
 
   
@@ -72,10 +117,6 @@ header
   
   /* ------ TOP - Search + Filtres ------- */
 
-.top
-{
-    display: block;
-}
 .entete
 {
     line-height: 1.3;
@@ -101,7 +142,7 @@ header
     border-left: none;
     border-right: none;
     font-weight: bold;
-    padding: 0.8em 0 0.8em;
+    padding: 1.1em 1em;
 }
 button
 {
@@ -113,13 +154,16 @@ button
     padding: 0.8em 1.5em;
     font-size: 1em;
 }
+.button-search i 
+{
+    display: none;
+}
 .fa-map-marker-alt
 {
     background-color: #F2F2F2;
     border-radius: 1em 0em 0em 1em;
-    padding: 1em 1em 1em 1em;
+    padding: 0.9em 1em 1em 1em;
 }
-
 
 /* ------ Info result ------ */
 
@@ -152,8 +196,8 @@ button
 }
 
 /* Filtres */
-
 .filtres
+
 {
     display: flex;
     flex-wrap: wrap;
@@ -203,6 +247,45 @@ button
 }
 
 
+@media screen and (max-width: 576px) 
+{
+    section 
+    {
+        width: 576px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top 
+    {
+        width: 576px;
+    }
+    .filtres
+    {
+        width: 576px;
+        position: relative;
+    }
+    .button-nav-filter
+    {
+        margin: 3em 5em 0 0;
+    }
+    .filtres h2 
+    {
+        position: absolute;
+        top: 0;
+        margin: 0 0 2em;
+    }
+    .desktop
+    {
+        display: none;
+    }
+    .button-search i
+    {
+        display: inherit;
+    }
+}
+
+
 /* ----- Corps du site : organisation, images etc -----  */
 
 section
@@ -247,6 +330,7 @@ section
 	border-radius: 1em;
 	box-shadow: 0 0 20px #0000002e;
 	margin-bottom: 10px;
+
 }
 .room li
 {
@@ -256,6 +340,7 @@ section
 {
     margin: 0 1em;
     padding: 0;
+    line-height: 1.3em;
 }
 .photoroom
 {
@@ -281,7 +366,8 @@ section
 .sectitle
 {
     display: flex;
-    padding: 1.2em 3em 1em 2em;
+    padding: 1.2em 3em 0.6em 2em;
+    font-size: 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -302,6 +388,7 @@ section
     padding: 0.4em;
     border-radius: 1em;
     box-shadow: 0 0 10px #0000002e;
+    line-height: 1.3em;
 }
 .room2 ul
 {
@@ -345,6 +432,52 @@ section
 {
     color: #0065FC;
 }
+a.room:link
+{
+    text-decoration: none;
+}
+a.room2:link
+{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) 
+{
+    .article
+    {
+        width: 576px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .secright
+    {
+        width: 100%;
+        height: 630px;
+        margin-left: 0;
+    }
+    .art
+    {
+        width: 576px;
+        background: none;
+    }
+
+    .room
+    {
+        width: 100%;
+        height: 250px;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .hebergement1
+    {
+        width: 100%;
+    }
+    .photoroom
+    {
+        width: 100%;
+        height: 180px;
+    }
+}
 
 
 /* ------ Part 2 : Section Activités ------> */
@@ -367,7 +500,8 @@ section
 {
     font-weight: bold;
     font-size: 1.2em;
-    margin: 1.2em 1.5em;
+    display: flex;
+    padding: 0.5em 1em;
 }
 .total-act
 {
@@ -380,8 +514,6 @@ section
 {
     box-shadow: 0 0 20px #0000002e;
     border-radius: 1em;
-    padding: 0 0 1em;
-
 }
 .card1,.card4
 {
@@ -417,7 +549,7 @@ a.activity-link:link
 .activity-card img
 {
     width: 100%;
-    height: 450px;
+    height: 458px;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
 }
@@ -448,6 +580,45 @@ a.activity-link:link
     height: 200px;
 }
 
+@media screen and (max-width: 576px) 
+{
+    .activite
+    {
+        width: 576px;
+        height: 1700px;
+    }
+    .total-act
+    {
+        width: 90%;
+        display: block;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .activity-card
+    {
+        width: 100%;
+        height: auto;
+        margin: 1em 0 3em;
+    }
+    .colonne
+    {
+        width: 100%;
+        margin: 0 0 3em;
+    }
+    .activity-card img
+    {
+        height: 180px;
+    }
+    .colonne img 
+    {
+        height: 180px;
+    }
+    .card1, .card4, .card2, .card3, .card5, .card6
+    {
+        padding-bottom: 0;
+    }
+}
+
 /* ------ Footer ------ */
 
 footer
@@ -460,7 +631,6 @@ footer
 }
 .foot
 {
-    max-width: 100%;
     width: 1440px;
     margin: auto;
     padding: 0 2em;
@@ -477,7 +647,7 @@ footer
 {
     width: 30%;
     font-size: 1em;
-    padding: 2em rem;
+    padding: 2em 2em;
 }
 .assistance
 {
@@ -495,3 +665,21 @@ color: black;
     padding-bottom: 1em;
     font-size: 1.3em;
 }
+
+@media screen and (max-width: 576px) 
+{
+    footer
+    {
+        width: 576px;
+    }
+    .foot
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+    .propos,.nosheb,.assistance
+    {
+        padding: 0 2em 0;
+    }
+}
+
