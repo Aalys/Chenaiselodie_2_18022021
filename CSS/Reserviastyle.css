@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'ralewaythin';
-    src: url('D:/Documents/Formation/P2_Chenais_Elodie/police/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('D:/Documents/Formation/P2_Chenais_Elodie/police/raleway-variablefont_wght-webfont.woff') format('woff');
+    src: url('./police/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./police/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 
-/* Polices */
+/* =========== Polices ============ */
 
 body
 {
@@ -20,11 +20,13 @@ h2, h3, h4
     font-weight: bold;
 }
 
-/* En-tête */
+/*  =================================
+    ============ HEADER =============
+    ================================= */
 
 header
 {
-    width: 1440px;
+    width: 62%;
     margin: auto;
     display: flex;
 }
@@ -63,104 +65,13 @@ header
     border-top: 3px solid #0065FC;
 }
 
-@media screen and (max-width: 576px) 
-{
-    header
-    {
-        width: 576px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin-bottom: 2em;
-    }
-    .logo
-    {
-        height: 50px;
-        padding-top: 15px;
-        padding-bottom: 20px;
-    }
-    .nav
-    {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-    .button-inscription
-    {
-        position: absolute;
-        right: 0;
-    }
-    .activelink
-    {
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-    .headerlinkact
-    {
-        border-bottom: 3px solid #F2F2F2;
-        border-top: none;
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
 
-}
-@media screen and (min-width: 576px) and (max-width: 768px)
-{
-    header
-    {
-        width: 768px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin-bottom: 2em;
-    }
-    .logo
-    {
-        height: 50px;
-        padding-top: 15px;
-        padding-bottom: 20px;
-    }
-    .nav
-    {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-    .button-inscription
-    {
-        position: absolute;
-        right: 0;
-    }
-    .activelink
-    {
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-    .headerlinkact
-    {
-        border-bottom: 3px solid #F2F2F2;
-        border-top: none;
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-}
-
-
-  /* soucis pour le responsive, "s'inscrire" doit se trouver seul en haut : position absolute/relative */
-
+  /* pour le responsive, "s'inscrire" doit se trouver seul en haut : position absolute/relative */
 
   
-  
-  
-  /* ------ TOP - Search + Filtres ------- */
+  /* ==========================================
+     ========= TOP - Search + Filtres =========
+     ==========================================*/
 
 .entete
 {
@@ -171,7 +82,7 @@ header
     margin-bottom: -0.2em;
 }
 
-  /* Design search */ 
+  /* ============== Design search ============== */ 
   
 .search
 {
@@ -210,7 +121,7 @@ button
     padding: 0.9em 1em 1em 1em;
 }
 
-/* ------ Info result ------ */
+/* ================ Info result ================= */
 
 .result
 {
@@ -240,7 +151,8 @@ button
     margin: 0;
 }
 
-/* Filtres */
+/* ============== Filtres ================== */
+
 .filtres
 
 {
@@ -292,87 +204,13 @@ button
 }
 
 
-@media screen and (max-width: 576px) 
-{
-    section 
-    {
-        width: 576px;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .top 
-    {
-        width: 576px;
-    }
-    .filtres
-    {
-        width: 576px;
-        position: relative;
-    }
-    .button-nav-filter
-    {
-        margin: 3em 5em 0 0;
-    }
-    .filtres h2 
-    {
-        position: absolute;
-        top: 0;
-        margin: 0 0 2em;
-    }
-    .desktop
-    {
-        display: none;
-    }
-    .button-search i
-    {
-        display: inherit;
-    }
-}
-@media screen and (min-width: 576px) and (max-width: 768px)
-{
-    section 
-    {
-        width: 768px;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .top 
-    {
-        width: 768px;
-    }
-    .filtres
-    {
-        width: 768px;
-        position: relative;
-    }
-    .button-nav-filter
-    {
-        margin: 3em 5em 0 0;
-    }
-    .filtres h2 
-    {
-        position: absolute;
-        top: 0;
-        margin: 0 0 2em;
-    }
-    .desktop
-    {
-        display: none;
-    }
-    .button-search i
-    {
-        display: inherit;
-    }
-}
-
-
-/* ----- Corps du site : organisation, images etc -----  */
+/*  ================================================
+    ====== Corps du site : organisation, images ====
+    ================================================ */
 
 section
 {
-    width: 1440px;
+    width: 62%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -406,6 +244,7 @@ section
 }
 .room {
 	width: 27%; /* Avec les modif du flex, la largeur de 30% permet 3 blocs et un peu de marge*/
+    min-width: 15em;
 	height: 180px; /* Hauteur fixe, on en avait parlé*/ 
 	background-color: white;
 	padding: 0.4em;
@@ -434,13 +273,14 @@ section
     margin-bottom: 0.4em;
 }
 
-/* Partie droite de section - Aside */
+/* =============== Partie droite de section - Aside ================== */
 
 .secright
 {
     display: flex;
     background-color: #F2F2F2;
     width: 30%;
+    min-width: 13em;
     border-radius: 1em;
     margin-left: 2em;
     flex-direction: column;
@@ -455,17 +295,15 @@ section
 }
 .hebergement2 {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	row-gap: 2em;
 	margin: 0 2em 0 2em;
 	height: 100%;
-	width: 85%;
 }
 .room2
 {
     display: flex;
-    width: 100%;
-    height: 130px;
+    height: 24%;
     background-color: white;
     padding: 0.4em;
     border-radius: 1em;
@@ -525,104 +363,26 @@ a.room2:link
     color: black;
 }
 
-@media screen and (max-width: 576px) 
-{
-    .article
-    {
-        width: 576px;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .secright
-    {
-        width: 100%;
-        height: 630px;
-        margin-left: 0;
-    }
-    .art
-    {
-        width: 576px;
-        background: none;
-    }
 
-    .room
-    {
-        width: 100%;
-        height: 250px;
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-    .hebergement1
-    {
-        width: 100%;
-    }
-    .photoroom
-    {
-        width: 100%;
-        height: 180px;
-    }
-}
-@media screen and (min-width: 576px) and (max-width: 768px)
-{
-    .article
-    {
-        width: 768px;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .secright
-    {
-        width: 100%;
-        height: 630px;
-        margin-left: 0;
-    }
-    .art
-    {
-        width: 768px;
-        background: none;
-    }
-
-    .room
-    {
-        width: 100%;
-        height: 250px;
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-    .hebergement1
-    {
-        width: 100%;
-    }
-    .photoroom
-    {
-        width: 100%;
-        height: 180px;
-    }
-}
-
-
-/* ------ Part 2 : Section Activités ------> */
+/* ================= Part 2 : Section Activités ================= */
 
 .activite
 {
-    width: 1440px;
-    height: 600px;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5em;
 }
 .activite h4
 {
-    padding: 2.5em 1em 1em;
-    font-weight: bold;
+    padding: 1em 1em;
     font-size: 20px;
 }
 .total-act strong
 {
-    font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: flex;
-    padding: 0.5em 1em;
+    padding: 0 0  0 1em;
 }
 .total-act
 {
@@ -644,21 +404,18 @@ a.room2:link
 .activity-card
 {
     width: 23%;
-    height: 500px;
     margin: 0 1.5em;    
 }
 .colonne
 {
     width: 24%;
-    height: 500px;
     margin: 0 1.5em;  
     display: flex;
-    flex-direction: column;
-    justify-content:space-between;  
+    flex-wrap: wrap;
+    row-gap: 1.5em;
 }
 .activity-link
 {
-    height: 100%;
     color: black;
     font-weight: bold;
     border-radius: 2em;
@@ -683,7 +440,7 @@ a.activity-link:link
 .card-act-img2
 {
     width: 100%;
-    height: 250px;
+    height: 260px;
 }
 .card-act-img3
 {
@@ -701,84 +458,10 @@ a.activity-link:link
     height: 200px;
 }
 
-@media screen and (max-width: 576px) 
-{
-    .activite
-    {
-        width: 576px;
-        height: 1700px;
-    }
-    .total-act
-    {
-        width: 90%;
-        display: block;
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-    .activity-card
-    {
-        width: 100%;
-        height: auto;
-        margin: 1em 0 3em;
-    }
-    .colonne
-    {
-        width: 100%;
-        margin: 0 0 3em;
-    }
-    .activity-card img
-    {
-        height: 180px;
-    }
-    .colonne img 
-    {
-        height: 180px;
-    }
-    .card1, .card4, .card2, .card3, .card5, .card6
-    {
-        padding-bottom: 0;
-    }
-}
-@media screen and (min-width: 576px) and (max-width: 768px)
-{
-    .activite
-    {
-        width: 768px;
-        height: 1700px;
-    }
-    .total-act
-    {
-        width: 90%;
-        display: block;
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-    .activity-card
-    {
-        width: 100%;
-        height: auto;
-        margin: 1em 0 3em;
-    }
-    .colonne
-    {
-        width: 100%;
-        margin: 0 0 3em;
-    }
-    .activity-card img
-    {
-        height: 180px;
-    }
-    .colonne img 
-    {
-        height: 180px;
-    }
-    .card1, .card4, .card2, .card3, .card5, .card6
-    {
-        padding-bottom: 0;
-    }
-}
 
-/* ------ Footer ------ */
+ /* ========================================================
+    ====================== FOOTER ==========================
+    ======================================================== */
 
 footer
 {
@@ -786,11 +469,10 @@ footer
     background-color: #F2F2F2;
     padding-top: 1em;
     line-height: 1em;
-
 }
 .foot
 {
-    width: 1440px;
+    width: 65%;
     margin: auto;
     padding: 0 2em;
     display: flex;
@@ -825,35 +507,184 @@ color: black;
     font-size: 1.3em;
 }
 
-@media screen and (max-width: 576px) 
+@media screen and (max-width: 768px) 
 {
-    footer
+    /* ----- HEADER ----- */
+
+    header
     {
-        width: 576px;
+        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 2em;
     }
-    .foot
+    .logo
+    {
+        height: 50px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .nav
     {
         width: 100%;
-        flex-direction: column;
+        justify-content: center;
+    }
+    .button-inscription
+    {
+        position: absolute;
+        right: 0;
+    }
+    .activelink
+    {
+        width: 50%;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        display: flex;
+        justify-content: center;
+    }
+    .headerlinkact
+    {
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+        border-top: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ------- TOP ------- */
+
+    section 
+    {
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top 
+    {
+        width: 100%;
+    }
+    .filtres
+    {
+        position: relative;
+    }
+    .button-nav-filter
+    {
+        margin: 3em 1em 0 0;
+    }
+    .filtres h2 
+    {
+        position: absolute;
+        top: 0;
+        margin: auto;
+    }
+    .desktop
+    {
+        display: none;
+    }
+    .button-search i
+    {
+        display: inherit;
+    }
+    .search
+    {
+        white-space:nowrap;
+    }
+
+    /* ------ Corps du site ------ */
+
+    .article
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .secright
+    {
+        width: 100%;
+        height: 630px;
+        margin-left: 0;
+    }
+    .art
+    {
+        width: 100%;
+        background: none;
+    }
+
+    .room
+    {
+        width: 100%;
+        height: 250px;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .hebergement1
+    {
+        width: 100%;
+    }
+    .photoroom
+    {
+        width: 100%;
+        height: 180px;
+    }
+
+    /* ------ PART 2 : ACTIVITE ------ */
+  
+    .activity-card
+    {
+        width: 100%;
+        height: auto;
+    }
+    .colonne
+    {
+        width: 100%;
+    }
+    .activity-card img
+    {
+        height: 180px;
+    }
+    .colonne img 
+    {
+        height: 180px;
+    }
+    .card1, .card4, .card2, .card3, .card5, .card6
+    {
+        padding-bottom: 0;
+    }
+    .card2 
+    {
+        min-width: 100%;
+    }
+
+    /* ----- FOOTER -----*/
+
+    .foot
+    {
+        flex-wrap: wrap;
     }
     .propos,.nosheb,.assistance
     {
         padding: 0 2em 0;
     }
 }
-@media screen and (min-width: 576px) and (max-width: 768px)
+@media screen and (max-width: 1500px)
 {
-    footer
+    .total-act
     {
-        width: 768px;
+        width: 90%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 2em;
     }
-    .foot
+    .colonne-2 
+    {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+    .card5, .card6 
     {
         width: 100%;
-        flex-direction: column;
-    }
-    .propos,.nosheb,.assistance
-    {
-        padding: 0 2em 0;
     }
 }
