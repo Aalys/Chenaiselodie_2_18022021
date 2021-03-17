@@ -245,7 +245,7 @@ section
 .room {
 	width: 27%; /* Avec les modif du flex, la largeur de 30% permet 3 blocs et un peu de marge*/
     min-width: 15em;
-	s/* Hauteur fixe, on en avait parlé*/ 
+	/* Hauteur fixe, on en avait parlé*/ 
 	background-color: white;
 	padding: 0.4em;
 	border-radius: 1em;
