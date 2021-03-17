@@ -245,7 +245,7 @@ section
 .room {
 	width: 27%; /* Avec les modif du flex, la largeur de 30% permet 3 blocs et un peu de marge*/
     min-width: 15em;
-	height: 180px; /* Hauteur fixe, on en avait parlé*/ 
+	s/* Hauteur fixe, on en avait parlé*/ 
 	background-color: white;
 	padding: 0.4em;
 	border-radius: 1em;
@@ -368,26 +368,23 @@ a.room2:link
 
 .activite
 {
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 62%;
     margin-bottom: 5em;
 }
 .activite h4
 {
-    padding: 1em 1em;
+    padding: 1em 0 0 0;
     font-size: 20px;
 }
 .total-act strong
 {
     font-size: 1em;
     display: flex;
-    padding: 0.3em;
+    padding: 0.5em;
 }
 .total-act
 {
     width: 100%;
-    height: 500px;
     display: flex;
     flex-direction: row;
 }
@@ -395,6 +392,7 @@ a.room2:link
 {
     box-shadow: 0 0 20px #0000002e;
     border-radius: 1em;
+    width: 100%;
 }
 .card1,.card4
 {
@@ -403,8 +401,8 @@ a.room2:link
 }
 .activity-card
 {
-    width: 23%;
-    margin: 0 1.5em;    
+    width: 24%;
+    margin: 0 1 em;    
 }
 .colonne
 {
@@ -592,6 +590,12 @@ color: black;
         width: 100%;
         height: 180px;
     }
+     /* ----- FOOTER -----*/
+
+     .foot
+     {
+         width: 80%;
+     }
 }
 
 @media screen and (max-width: 768px) 
