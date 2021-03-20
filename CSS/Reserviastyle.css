@@ -2,61 +2,771 @@
 
 @font-face {
     font-family: 'ralewaythin';
-    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-variablefont_wght-webfont.woff') format('woff');
+    src: url('./police/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./police/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 
+/* =========== Polices ============ */
 
 body
 {
-    width:  100%;
+    font-family: "ralewaythin", Arial, Helvetica, sans-serif;
 }
-.logo1
+h2, h3, h4
 {
-    width: 80px;
+    font-weight: bold;
 }
+
+/*  =================================
+    ============ HEADER =============
+    ================================= */
+
 header
 {
+    width: 62%;
+    margin: auto;
+    display: flex;
+}
+     /* Penser à définir les tailles pour séparer */
+.logo
+{
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.nav
+{
     width: 100%;
-}
-.haut
-{
     display: flex;
-    align-items: baseline;
+    justify-content: flex-end;
 }
-nav
+.headerlink
 {
+    text-decoration: none;
+    padding: 2em;
     display: flex;
-    justify-content: right;
+    border-top: 3px solid transparent;
+    color: #0065FC;
 }
-.entete h3
+.headerlink:hover
 {
-    margin-bottom: -4px;
+    color: #0065FC;
+}
+.headerlinkact
+{
+    color: black;
+}
+.activelink
+{
+    border-top: 3px solid #0065FC;
 }
 
-/* Police */
 
-ul
+  /* pour le responsive, "s'inscrire" doit se trouver seul en haut : position absolute/relative */
+
+  
+  /* ==========================================
+     ========= TOP - Search + Filtres =========
+     ==========================================*/
+
+.entete
 {
-    list-style-type: none;
+    line-height: 1.3;
+}
+.entete p
+{
+    margin-bottom: -0.2em;
+}
+
+  /* ============== Design search ============== */ 
+  
+.search
+{
+    display: inline-flex;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+#site-search
+{
+    border-width: 1px;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    padding: 1.1em 1em;
+}
+button
+{
+    border: none;
+    border-radius: 0em 1em 1em 0em;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+}
+.button-search i 
+{
+    display: none;
+}
+.fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+    border-radius: 1em 0em 0em 1em;
+    padding: 0.9em 1em 1em 1em;
+}
+
+/* ================ Info result ================= */
+
+.result
+{
+    display: flex;
+    align-items: center;
+    margin: 2em 0 2em 0;
+}
+.info-result
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 2em;
+    min-height: 2em;
+    min-width: 2em;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    margin-right: 1em;
+}
+.fa-info
+{
+    color: blue;
+}
+.text-result
+{
+    margin: 0;
+}
+
+/* ============== Filtres ================== */
+
+.filtres
+
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.filtres h2
+{
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+.button-nav-filter
+{
+    border: 2px solid #f2f2f2b0;
+    border-radius: 50px;
+    margin-right: 2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+.button-nav-filter:hover
+{
+    background-color: #DEEBFF;
+    color: white;
+}
+.icon-filter
+{
+    background-color: #DEEBFF;
+    color: blue;
+    border-radius: 100%;
+    height: 3em;
+    width: 3em;
+    min-height: 3.5em;
+    min-width: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-filter
+{
+    align-items: center;
+    margin: 0 1.2em;
+    color: black;
+    font-weight: bold;
+}
+
+
+/*  ================================================
+    ====== Corps du site : organisation, images ====
+    ================================================ */
+
+section
+{
+    width: 62%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .article
 {
     display: flex;
-    flex-direction: column;
 }
-.hebergement1
+.art 
 {
-   display: flex;
+    background-color: #F2F2F2;
+    width: 67%;
+    border-radius: 2em;
 }
-.hebergement2
+.art h4 
+{
+    padding: 2.2em;
+    margin: 0;
+    font-size: 20px;
+}
+.art p 
+{
+    padding: 1em 3em 1em;
+    font-weight: bold;
+}
+
+.hebergement1 
+{
+	display: flex;
+	justify-content: space-evenly; /* équitablement */
+	flex-wrap: wrap; /*Le flex suffit amplement pour tout caler en une seule div*/
+    row-gap: 2em;
+}
+.room {
+	width: 27%; /* Avec les modif du flex, la largeur de 30% permet 3 blocs et un peu de marge*/
+    min-width: 15em;
+	/* Hauteur fixe, on en avait parlé*/ 
+	background-color: white;
+	padding: 0.4em;
+	border-radius: 1em;
+	box-shadow: 0 0 20px #0000002e;
+	margin-bottom: 10px;
+
+}
+.room li
+{
+    list-style-type: none;
+}
+.room ul
+{
+    margin: 0 1em;
+    padding: 0;
+    line-height: 1.3em;
+}
+.photoroom
+{
+    width: 100%; /* largeur de 100% des 30% du bloc parent*/
+    height: 110px;
+    margin: auto; /* Hauteur fixe */
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+    margin-bottom: 0.4em;
+}
+
+/* =============== Partie droite de section - Aside ================== */
+
+.secright
 {
     display: flex;
+    background-color: #F2F2F2;
+    width: 30%;
+    min-width: 13em;
+    border-radius: 1em;
+    margin-left: 2em;
+    flex-direction: column;
 }
-.room
+.sectitle
 {
-    width: 8%;
+    display: flex;
+    padding: 1.2em 3em 0.6em 2em;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.hebergement2 
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 2em 0 2em;
+	height: 100%;
+}
+.room2
+{
+    display: flex;
+    height: 24%;
+    background-color: white;
+    padding: 0.4em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px #0000002e;
+    line-height: 1.3em;
+}
+.room2 ul
+{
+    margin: 0;
+    padding: 0;
+}
+.room2 li
+{
+    list-style-type: none;
+}
+.photoheb3 {
+	min-width: 35%;
+	height: 100%;
+	max-width: 35%;
+}
+.photoroom2
+{
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    width: 100%;
+    height: 100%;
+    border-radius: 1em 0 0 1em;
+}
+.block-txt-aside-right { /* au lieu de soleil, eau etc... une seule classe suffit et la position est relative pour appliquer une position aux étoiles*/
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    position: relative; 
+}
+
+.stars-span { /* position absolute pour afficher en bas du bloc. Pour ça, j'ai mis le parent en position relative */
+	position: absolute;
+	bottom: 0;
+    color: #0065FC;
+}
+
+.stars-span-g
+{
+    color: darkgray;
+}
+.stars-span2
+{
+    color: #0065FC;
+}
+a.room:link
+{
+    text-decoration: none;
+    color: black;
+}
+a.room2:link
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ================= Part 2 : Section Activités ================= */
+
+.activite
+{
+    width: 62%;
+    margin-bottom: 5em;
+}
+.activite h4
+{
+    padding: 1em 0 0 0;
+    font-size: 20px;
+}
+.total-act strong
+{
+    font-size: 1em;
+    display: flex;
+    padding: 0.5em;
+}
+.total-act
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.card 
+{
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1em;
+    width: 100%;
+}
+.card1,.card4
+{
+    height: 100%;
+    padding-bottom: 0;
+}
+.activity-card
+{
+    width: 24%;
+    margin: 0 0.5em;    
+}
+.colonne
+{
+    width: 24%;
+    margin: 0 1.5em;  
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5em;
+}
+.activity-link
+{
+    color: black;
+    font-weight: bold;
+    border-radius: 2em;
+}
+a.activity-link:link
+{
+    text-decoration: none;
+}
+.activity-card img
+{
+    width: 100%;
+    height: 458px;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+.colonne img
+{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+.card-act-img2
+{
+    width: 100%;
+    height: 260px;
+}
+.card-act-img3
+{
+    width: 100%;
+    height: 140px;
+}
+.card-act-img5
+{
+    width: 100%;
+    height: 190px;
+}
+.card-act-img6
+{
+    width: 100%;
+    height: 200px;
+}
+
+
+ /* ========================================================
+    ====================== FOOTER ==========================
+    ======================================================== */
+
+footer
+{
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-top: 1em;
+    line-height: 1em;
+}
+.foot
+{
+    width: 65%;
+    margin: auto;
+    padding: 0 2em;
+    display: flex;
+    align-items: baseline;
+}
+.propos
+{
+    width: 30%;
+    font-size: 1em;
+    padding: 2em 2em;
+}
+.nosheb
+{
+    width: 30%;
+    font-size: 1em;
+    padding: 2em 2em;
+}
+.assistance
+{
+    width: 30%;
+    font-size: 1em;
+    padding: 2em 2em;
+}   
+.footlink
+{
+text-decoration:none;
+color: black;
+}
+.foot h3
+{
+    padding-bottom: 1em;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 1500px)
+{
+
+    /* ------ HEADER ------ */
+    header
+    {
+        width: 90%;
+    }
+    section
+    {
+        width: 90%;
+    }
+
+     /* ------ PART 2 : ACTIVITE ------ */
+
+    .activite
+    {
+        width: 90%;
+    }
+    .total-act
+    {
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 2em;
+    }
+    .colonne-2 
+    {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+    }
+    .card5, .card6, .card3
+    {
+        width: 100%;
+    }
+    .article
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* ------ Corps du site ------ */
+
+    .secright
+    {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+    .art
+    {
+        width: 100%;
+        background: none;
+    }
+
+    .room
+    {
+        width: 40%;
+        height: 250px;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .room2
+    {
+        width: 100%;
+        height: 200px;
+    }
+    .hebergement1
+    {
+        width: 100%;
+    }
+    .hebergement2
+    {
+        row-gap: 2em;
+        margin: 1em 1em;
+    }
+    .photoroom
+    {
+        width: 100%;
+        height: 180px;
+    }
+     /* ----- FOOTER -----*/
+
+     .foot
+     {
+         width: 80%;
+     }
+}
+
+@media screen and (max-width: 768px) 
+{
+    /* ----- HEADER ----- */
+
+    header
+    {
+        width: 100%;
+        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 2em;
+    }
+    .logo
+    {
+        height: 50px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .nav
+    {
+        width: 100%;
+        justify-content: center;
+    }
+    .button-inscription
+    {
+        position: absolute;
+        right: 0;
+    }
+    .activelink
+    {
+        width: 50%;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        display: flex;
+        justify-content: center;
+    }
+    .headerlinkact
+    {
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+        border-top: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ------- TOP ------- */
+
+    section 
+    {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top 
+    {
+        width: 100%;
+    }
+    .filtres
+    {
+        position: relative;
+    }
+    .button-nav-filter
+    {
+        margin: 2em 0 0 0;
+    }
+    .filtres h2 
+    {
+        position: absolute;
+        top: 0;
+        margin: auto;
+    }
+    .desktop
+    {
+        display: none;
+    }
+    .button-search i
+    {
+        display: inherit;
+    }
+    .search
+    {
+        white-space:nowrap;
+    }
+    #site-search
+    {
+        width: 150px;
+    }
+    /* ------ Corps du site ------ */
+
+    .article
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .secright
+    {
+        width: 100%;
+        height: 855px;
+        margin-left: 0;
+    }
+    .art
+    {
+        width: 100%;
+        background: none;
+    }
+
+    .room
+    {
+        width: 100%;
+        height: 250px;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .hebergement1
+    {
+        width: 100%;
+    }
+    .photoroom
+    {
+        width: 100%;
+        height: 180px;
+    }
+
+    /* ------ PART 2 : ACTIVITE ------ */
+  
+    /* .activite
+    {
+        width: 100%;
+    } */
+    .activity-card
+    {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .colonne
+    {
+        width: 100%;
+        margin: 0;
+    }
+    .activity-card img
+    {
+        height: 180px;
+    }
+    .colonne img 
+    {
+        height: 180px;
+    }
+    .card1, .card4, .card2, .card3, .card5, .card6
+    {
+        padding-bottom: 0;
+    }
+    .card2 
+    {
+        min-width: 100%;
+    }
+
+    /* ----- FOOTER -----*/
+
+    .foot
+    {
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        white-space:nowrap;
+    }
+    .propos,.nosheb,.assistance
+    {
+        padding: 0 3em 0;
+    }
 }
